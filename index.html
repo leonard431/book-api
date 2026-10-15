@@ -4,18 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
+
     <title>Book Search</title>
 
     <link rel="stylesheet" href="style.css">
+    
 </head>
 
 <body>
-    <h1>Book Search</h1>
-    <input type="text" id="searchInput" placeholder="Enter a book name"
-    <button id="searchButton">Search</button>
-    
-    <div id="bookList"></div>
 
-    <script> src="script.js"</script>
-</body>    
+    <header>
+        <h1>Book Search</h1>
+    </header>
+
+    <section class="hero">
+        <h2>Search.</h2>
+        <p>Discover your next favourite book.</p>
+
+        <div class="search-box">
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search for books..."
+            >
+            <button id="searchButton">Go</button>
+        </div>
+    </section>
+
+    <main>
+        <p id="message">Search for a book to get started.</p>
+        <div id="bookList"></div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
 </html>
